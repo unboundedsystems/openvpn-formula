@@ -1,0 +1,8 @@
+- Need to make the service restart:
+
+  Add a systemd file like:
+  /etc/systemd/system/openvpn@.service.d/override.conf 
+
+  With contents:
+  [Service]
+  Restart=always
